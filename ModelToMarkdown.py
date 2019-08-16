@@ -5,9 +5,9 @@ import mforms
 import re
 from pprint import pprint
  
-ModuleInfo = DefineModule(name="ModelToMarkdown", author="Abraham Flores Cosme", version="1.0", description="Model to data dictionary with markdown sintax")
+ModuleInfo = DefineModule(name="ModelToMarkdown", author="Abraham Flores Cosme", version="1.0", description="Model to data dictionary with markdown syntax")
  
-@ModuleInfo.plugin("ModelToMarkdown", caption="Dictionary with markdown sintax", description="Model to data dictionary with markdown sintax", input=[wbinputs.currentCatalog()], pluginMenu="Catalog")
+@ModuleInfo.plugin("ModelToMarkdown", caption="Dictionary with markdown syntax", description="Model to data dictionary with markdown syntax", input=[wbinputs.currentCatalog()], pluginMenu="Catalog")
 @ModuleInfo.export(grt.INT, grt.classes.db_Catalog)
 
 def htmlDataDictionary(catalog):
